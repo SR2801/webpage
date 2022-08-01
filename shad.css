@@ -1,0 +1,68 @@
+h1{
+    font-size: 80px;
+    font-family:'Times New Roman';
+    text-align: center;
+}
+h2{
+    font-size: 80px;
+    font-family:'Times New Roman';
+    /* color: white; */
+    background-color: white;
+    /* border: 5px solid black; */
+    border-radius: 15px;
+    text-align: center;
+    animation-name: open;
+    animation-duration: 5s;
+    animation-delay:7s;
+    max-width: 400px;
+    margin:10px;
+}
+#header{
+    background-image: linear-gradient(to bottom right,blue,green);
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    animation-name: fade-down;
+    animation-duration:3s;
+}
+#logo{
+    height: 350px;
+    background-image: url('logo.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100vw;
+    margin: 0px;
+}
+#about{
+    display:flex;
+    background-image: linear-gradient(to bottom right,lightblue,white,blue);
+    margin: 20px 0 20px 0;
+}
+img{
+    height:500px;
+    width: 650px;
+    padding: 10px;
+}
+p{
+    font-size: 25px;
+    font-family: calibri;
+    color: rgb(5, 5, 67);
+    padding: 40px;
+    animation-name: fade-right;
+    animation-duration: 5s;
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+}
+@keyframes fade-down{
+    0%{opacity:0;top:20px;}
+    100%{opacity:0.8;top:0px;}
+}
+@keyframes fade-right{
+    0%{opacity:0;left:20px;}
+    100%{opacity:0.8;left:0px;}
+}
+@keyframes open{
+    0%{right:50px}
+    100%{right:0px}
+}
